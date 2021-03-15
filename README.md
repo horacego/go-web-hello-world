@@ -161,12 +161,6 @@ Known issues:
     
     Use mirrors of aliyun.com.
 
-2. kubernetes cluster v1.20.4 init failed
-
-    Fixed (workaround):
-
-    Use v1.15.4 instead.
-
 ### Task 10: deploy the hello world container
 
 Deploy service:
