@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: web-service
+  labels:
+    run: web-service
+spec:
+  type: NodePort
+  ports:
+  - port: 8081
+    nodePort: 31081
+    protocol: TCP
+  selector:
+    app: webserver 
+
