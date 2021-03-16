@@ -237,6 +237,28 @@ Known issues:
     ```
 
 ### Task 11: install kubernetes dashboard
-https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/
+
+Self-signed certificate and deploy kubernetes dashboard:
+
+https://github.com/kubernetes/dashboard/blob/master/docs/user/certificate-management.md#self-signed-certificate
+
+```
+cd k8s
+./deploy.sh
+```
+
+Accessing Dashboard (Expose the service to nodeport 31081):
+
+https://github.com/kubernetes/dashboard/tree/master/docs/user#nodeport
 
 ### Task 12: generate token for dashboard login in task 11
+
+Creating sample user and getting a Bearer Token:
+
+https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/creating-sample-user.md
+
+```
+cd k8s
+./token-gen.sh
+```
+
